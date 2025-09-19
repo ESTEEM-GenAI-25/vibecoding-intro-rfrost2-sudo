@@ -1,22 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Site</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 { margin-bottom: 0.5rem; }
-    p { color: #555; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reid Frost - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my simple one-page site.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Reid Frost</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Reid Frost</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Business professional with B2B sales experience in medical devices, pursuing entrepreneurship and strategic innovation at Notre Dame.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="headshot.jpg" alt="Reid Frost" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a self-motivated and analytical business professional with proven B2B sales experience 
+                        in orthotics and orthopedic medical devices. My background combines strategic thinking with 
+                        hands-on experience in healthcare technology and business development.
+                    </p>
+                    <p>
+                        Currently pursuing my Master of Science in Engineering, Science, and Technology Entrepreneurship 
+                        (ESTEEM) at the University of Notre Dame, I'm passionate about translating research insights 
+                        into actionable business strategies and building meaningful connections in the healthcare industry.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3> $380K+ </h3>
+                            <p>Annual Revenue Generated</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Healthcare Providers Served</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Business & Sales</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>B2B Sales</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Revenue Growth</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Relationship Building</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Strategic Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Healthcare & Medical</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-user-md"></i>
+                            <span>Medical Devices</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>Orthopedic Products</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-clipboard-check"></i>
+                            <span>Compliance</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Product Education</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Technology & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Microsoft Office</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-google"></i>
+                            <span>Google Workspace</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>CRM Software</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>NYES Strategic Research</h3>
+                        <p>Conducted strategic market research and competitive analysis to identify growth opportunities in domestic PPE manufacturing and supply chain resilience.</p>
+                        <div class="project-tech">
+                            <span>Market Research</span>
+                            <span>Strategic Analysis</span>
+                            <span>Business Strategy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-file-alt"></i> Details
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>FootTech B2B Sales</h3>
+                        <p>Built and managed B2B relationships with healthcare providers, selling orthopedic products and providing tailored education to improve patient outcomes.</p>
+                        <div class="project-tech">
+                            <span>B2B Sales</span>
+                            <span>Healthcare</span>
+                            <span>Orthopedic Products</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-chart-bar"></i> Results
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>ESTEEM Program</h3>
+                        <p>Pursuing Master of Science in Engineering, Science, and Technology Entrepreneurship at Notre Dame, focusing on translating research into business strategies.</p>
+                        <div class="project-tech">
+                            <span>Entrepreneurship</span>
+                            <span>Technology</span>
+                            <span>Innovation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-university"></i> Program
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just want to say hello.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>rfrost2@nd.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(817) 739-7953</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>South Bend, IN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/reid-frost" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:rfrost2@nd.edu" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+18177397953" class="social-link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://esteem.nd.edu" class="social-link" target="_blank">
+                            <i class="fas fa-university"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Reid Frost. All rights reserved.</p>
+                <p>Built with ❤️ and modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
